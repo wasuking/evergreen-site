@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +14,40 @@
 
     <link rel="stylesheet" href="../styles.css">
 
+    <!-- Google Analytics -->
+    <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-4KCRQ4BW93">
+    </script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'G-4KCRQ4BW93');
+    </script>
 </head>
+
 
 <body>
 
+
+    <!-- ==================================================
+         HEADER / NAVIGATION
+         ================================================== -->
+
     <header class="site-header">
+
         <div class="container nav-wrap">
 
-            <a class="brand" href="../index.html">
+            <a
+                class="brand"
+                href="../index.html"
+            >
                 <span class="brand-mark">E</span>
 
                 <span>
@@ -28,6 +55,7 @@
                     <small>Lawn & Landscape</small>
                 </span>
             </a>
+
 
             <button
                 class="nav-toggle"
@@ -41,11 +69,26 @@
                 <span class="sr-only">Open navigation</span>
             </button>
 
-            <nav id="site-nav" class="site-nav">
-                <a href="../index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="../index.html#services">Services</a>
-                <a href="gallery.html">Our Work</a>
+
+            <nav
+                id="site-nav"
+                class="site-nav"
+            >
+                <a href="../index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="../index.html#services">
+                    Services
+                </a>
+
+                <a href="gallery.html">
+                    Our Work
+                </a>
 
                 <a
                     class="button button-small"
@@ -57,17 +100,31 @@
             </nav>
 
         </div>
+
     </header>
 
 
+
+    <!-- ==================================================
+         ESTIMATE PAGE
+         ================================================== -->
+
     <main>
 
+
+        <!-- ==================== PAGE HERO ==================== -->
+
         <section class="page-hero">
+
             <div class="container">
 
-                <p class="eyebrow">Request an estimate</p>
+                <p class="eyebrow">
+                    Request an estimate
+                </p>
 
-                <h1>Tell us what your yard needs.</h1>
+                <h1>
+                    Tell us what your yard needs.
+                </h1>
 
                 <p class="lead">
                     Send the details Evergreen needs to understand your project.
@@ -76,14 +133,21 @@
                 </p>
 
             </div>
+
         </section>
 
 
+
+        <!-- ==================== ESTIMATE FORM ==================== -->
+
         <section class="section">
+
             <div class="container form-layout">
 
+
+                <!-- ---------- Form ---------- -->
+
                 <div>
-                    
 
                     <form
                         id="estimate-form"
@@ -93,14 +157,21 @@
                         novalidate
                     >
 
-                    <input 
-                        type="hidden" 
-                        name="access_key" 
-                        value="60da700a-5eb6-46d4-9e0d-053ee95bcf23">
+                        <!-- Web3Forms -->
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="60da700a-5eb6-46d4-9e0d-053ee95bcf23"
+                        >
+
+
+                        <!-- ---------- Name / Phone ---------- -->
 
                         <div class="field-row">
 
+
                             <div class="form-group">
+
                                 <label for="name">
                                     Name
                                     <span class="required">*</span>
@@ -113,12 +184,16 @@
                                     autocomplete="name"
                                     required
                                 >
+
                             </div>
 
 
                             <div class="form-group">
-                                <label for="phone">Phone</label>
-                            
+
+                                <label for="phone">
+                                    Phone
+                                </label>
+
                                 <input
                                     class="form-control"
                                     id="phone"
@@ -126,15 +201,24 @@
                                     type="tel"
                                     autocomplete="tel"
                                 >
+
                             </div>
+
 
                         </div>
 
 
+
+                        <!-- ---------- Email / Address ---------- -->
+
                         <div class="field-row">
 
+
                             <div class="form-group">
-                                <label for="email">Email</label>
+
+                                <label for="email">
+                                    Email
+                                </label>
 
                                 <input
                                     class="form-control"
@@ -143,10 +227,12 @@
                                     type="email"
                                     autocomplete="email"
                                 >
+
                             </div>
 
 
                             <div class="form-group">
+
                                 <label for="address">
                                     Property address
                                     <span class="required">*</span>
@@ -159,15 +245,24 @@
                                     autocomplete="street-address"
                                     required
                                 >
+
                             </div>
+
 
                         </div>
 
 
+
+                        <!-- ---------- ZIP / Property Type ---------- -->
+
                         <div class="field-row">
 
+
                             <div class="form-group">
-                                <label for="zip">ZIP code</label>
+
+                                <label for="zip">
+                                    ZIP code
+                                </label>
 
                                 <input
                                     class="form-control"
@@ -176,10 +271,12 @@
                                     inputmode="numeric"
                                     autocomplete="postal-code"
                                 >
+
                             </div>
 
 
                             <div class="form-group">
+
                                 <label for="property-type">
                                     Property type
                                 </label>
@@ -189,15 +286,31 @@
                                     id="property-type"
                                     name="property_type"
                                 >
-                                    <option value="">Select one</option>
-                                    <option>Single-family home</option>
-                                    <option>Townhome</option>
-                                    <option>Other residential property</option>
+                                    <option value="">
+                                        Select one
+                                    </option>
+
+                                    <option>
+                                        Single-family home
+                                    </option>
+
+                                    <option>
+                                        Townhome
+                                    </option>
+
+                                    <option>
+                                        Other residential property
+                                    </option>
                                 </select>
+
                             </div>
+
 
                         </div>
 
+
+
+                        <!-- ---------- Service ---------- -->
 
                         <div class="form-group">
 
@@ -212,19 +325,48 @@
                                 name="service"
                                 required
                             >
-                                <option value="">Choose a service</option>
-                                <option>Lawn mowing</option>
-                                <option>Mulch installation</option>
-                                <option>Spring cleanup</option>
-                                <option>Fall cleanup</option>
-                                <option>Hedge & shrub trimming</option>
-                                <option>Aeration & overseeding</option>
-                                <option>Small landscaping project</option>
-                                <option>Not sure / multiple services</option>
+                                <option value="">
+                                    Choose a service
+                                </option>
+
+                                <option>
+                                    Lawn mowing
+                                </option>
+
+                                <option>
+                                    Mulch installation
+                                </option>
+
+                                <option>
+                                    Spring cleanup
+                                </option>
+
+                                <option>
+                                    Fall cleanup
+                                </option>
+
+                                <option>
+                                    Hedge & shrub trimming
+                                </option>
+
+                                <option>
+                                    Aeration & overseeding
+                                </option>
+
+                                <option>
+                                    Small landscaping project
+                                </option>
+
+                                <option>
+                                    Not sure / multiple services
+                                </option>
                             </select>
 
                         </div>
 
+
+
+                        <!-- ---------- Project Description ---------- -->
 
                         <div class="form-group">
 
@@ -244,11 +386,15 @@
                         </div>
 
 
+
+                        <!-- ---------- Contact Preference ---------- -->
+
                         <fieldset class="form-group">
 
                             <legend class="fieldset-label">
                                 Preferred contact method
                             </legend>
+
 
                             <div class="radio-row">
 
@@ -284,11 +430,16 @@
                         </fieldset>
 
 
+
+                        <!-- ---------- Project Photos ---------- -->
+
                         <div class="form-group">
 
                             <label for="photos">
                                 Project photos
-                                <span class="form-help">(optional)</span>
+                                <span class="form-help">
+                                    (optional)
+                                </span>
                             </label>
 
                             <input
@@ -301,16 +452,21 @@
                             >
 
                             <span class="form-help">
-                                Photo delivery depends on the submission integration you choose.
+                                Photo delivery depends on the submission
+                                integration you choose.
                             </span>
 
                         </div>
 
 
+
+                        <!-- ---------- Submission ---------- -->
+
                         <p class="form-help">
                             Please provide at least a phone number or email so
                             Evergreen can respond.
                         </p>
+
 
                         <div
                             id="form-message"
@@ -319,20 +475,32 @@
                             aria-live="polite"
                         ></div>
 
-                        <button class="button" type="submit">
+
+                        <button
+                            class="button"
+                            type="submit"
+                        >
                             Request Estimate
                         </button>
+
 
                     </form>
 
                 </div>
 
 
+
+                <!-- ==================== CONTACT CARD ==================== -->
+
                 <aside class="contact-card">
 
-                    <p class="eyebrow">What happens next</p>
+                    <p class="eyebrow">
+                        What happens next
+                    </p>
 
-                    <h2>Evergreen reviews your request.</h2>
+                    <h2>
+                        Evergreen reviews your request.
+                    </h2>
 
                     <p>
                         The team will look at what you need and contact you by
@@ -341,9 +509,13 @@
                         prepare an estimate.
                     </p>
 
+
                     <hr>
 
-                    <h3>Prefer to call?</h3>
+
+                    <h3>
+                        Prefer to call?
+                    </h3>
 
                     <p>
                         <a href="tel:+15715550147">
@@ -351,7 +523,10 @@
                         </a>
                     </p>
 
-                    <h3>Email</h3>
+
+                    <h3>
+                        Email
+                    </h3>
 
                     <p>
                         <a href="mailto:evergreenlawnva@example.com">
@@ -359,38 +534,62 @@
                         </a>
                     </p>
 
+
                     <hr>
 
+
                     <p>
-                        <strong>Service area</strong><br>
+                        <strong>
+                            Service area
+                        </strong>
+                        <br>
+
                         Manassas, Gainesville, Haymarket, Bristow,
                         Centreville and nearby areas.
                     </p>
 
                 </aside>
 
+
             </div>
+
         </section>
+
 
     </main>
 
 
+
+    <!-- ==================================================
+         FOOTER
+         ================================================== -->
+
     <footer class="site-footer">
+
 
         <div class="container footer-grid">
 
+
             <div>
 
-                <a class="brand footer-brand" href="../index.html">
+                <a
+                    class="brand footer-brand"
+                    href="../index.html"
+                >
 
-                    <span class="brand-mark">E</span>
+                    <span class="brand-mark">
+                        E
+                    </span>
 
                     <span>
                         Evergreen
-                        <small>Lawn & Landscape</small>
+                        <small>
+                            Lawn & Landscape
+                        </small>
                     </span>
 
                 </a>
+
 
                 <p>
                     Residential lawn care and landscaping for Northern
@@ -400,9 +599,12 @@
             </div>
 
 
+
             <div>
 
-                <h3>Contact</h3>
+                <h3>
+                    Contact
+                </h3>
 
                 <a href="tel:+15715550147">
                     (571) 555-0147
@@ -415,9 +617,12 @@
             </div>
 
 
+
             <div>
 
-                <h3>Hours</h3>
+                <h3>
+                    Hours
+                </h3>
 
                 <p>
                     Mon–Fri: 8 AM–6 PM<br>
@@ -427,40 +632,36 @@
 
             </div>
 
+
         </div>
 
 
+
         <div class="container footer-bottom">
+
             <span>
-                © <span data-year></span> Evergreen Lawn & Landscape
+                © <span data-year></span>
+                Evergreen Lawn & Landscape
             </span>
 
             <span>
                 Estimate requests do not confirm scheduling.
             </span>
+
         </div>
+
 
     </footer>
 
 
+
+    <!-- ==================================================
+         JAVASCRIPT
+         ================================================== -->
+
     <script src="../script.js"></script>
+
 
 </body>
 
-    <!-- Google tag (gtag.js) -->
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-4KCRQ4BW93">
-    </script>
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'G-4KCRQ4BW93');
-    </script>
 </html>
