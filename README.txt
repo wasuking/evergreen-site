@@ -10,7 +10,6 @@ Files:
 
 INTENTIONAL TODOs
 1. Replace image src="#" placeholders with real Evergreen photos.
-2. Connect the estimate form to your chosen submission method/backend.
 3. Replace the current front-end-only submit handler in script.js with real submission logic.
 4. Add analytics/tracking after choosing the platform.
 5. Test file upload support against the submission provider you choose.
